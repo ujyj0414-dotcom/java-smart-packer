@@ -15,3 +15,5 @@
 # IDE temp files
 .project
 .classpath
+
+*.db
