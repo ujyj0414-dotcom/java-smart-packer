@@ -46,10 +46,10 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 
 ### 1. 3계층 아키텍처 및 수동 DI
 * `cli(표현)` - `domain(비즈니스)` - `repository(데이터)` 3계층으로 책임을 명확히 분리했습니다.
-* `Application` 클래스가 모든 객체(Service, Repository)를 직접 생성하고 **생성자를 통해 주입(Manual DI)**하는 방식을 채택했습니다. 이는 스프링과 같은 프레임워크가 왜 **DI(의존성 주입)**와 **IoC(제어의 역전)**를 사용하는지 그 원리를 이해하고 적용한 결과입니다.
+* `Application` 클래스가 모든 객체(Service, Repository)를 직접 생성하고 <b>생성자를 통해 주입(Manual DI)</b>하는 방식을 채택했습니다. 이는 스프링과 같은 프레임워크가 왜 <b>DI(의존성 주입)</b>와 <b>IoC(제어의 역전)</b>를 사용하는지 그 원리를 이해하고 적용한 결과입니다.
 
 ### 2. SOLID 원칙: 의존성 역전 원칙 (DIP)
-* `Domain` 계층(e.g., `UserService`)이 `UserRepositoryImpl`이라는 **'구현체'**에 직접 의존하지 않고, `UserRepository`라는 **'인터페이스(Interface)'**에만 의존하도록 설계했습니다.
+* `Domain` 계층(e.g., `UserService`)이 `UserRepositoryImpl`이라는 <b>'구현체'<b>에 직접 의존하지 않고, `UserRepository`라는 <b>'인터페이스(Interface)'</b>에만 의존하도록 설계했습니다.
 * 이 설계 덕분에, **메인 코드**에서는 `JDBC` 구현체를 주입하고, **테스트 코드**에서는 `UserService` 코드 수정 없이 `인메모리 DB`용 구현체를 주입하여 **테스트 환경을 완벽하게 격리**할 수 있었습니다.
 
 ### 3. 유지보수성을 위한 클린 코드
@@ -65,7 +65,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 ### 1. [OOP] 객체 다형성과 JSON 역직렬화 문제
 * **문제:** '의류', '전자기기' 등은 서로 다른 속성을 가집니다. 이를 `Item` 추상 클래스와 `ClothingItem` 등 서브클래스로 **객체지향적 다형성**을 구현했으나, `Gson`이 DB의 JSON을 `abstract class`로 복원하지 못하는 `JsonParseException`이 발생했습니다.
 * **해결:**
-    * 객체지향 설계를 포기하는 대신, **`ItemFactory`(팩토리 패턴)**와 `RuntimeTypeAdapterFactory`를 도입했습니다.
+    * 객체지향 설계를 포기하는 대신, <b>`ItemFactory`(팩토리 패턴)</b>와 `RuntimeTypeAdapterFactory`를 도입했습니다.
     * JSON 내부의 `category` 값을 읽어 `ClothingItem`인지 `ElectronicItem`인지 동적으로 판단하여, **DB에 저장된 JSON에서 객체의 다형성을 완벽하게 복원**해냈습니다.
 
 ### 2. [Test] 테스트 격리 및 신뢰성 확보
