@@ -26,8 +26,6 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 | <img src="demo/demo-auth.gif" width="300"> | <img src="demo/demo-ai-core.gif" width="300"> | <img src="demo/demo-admin-data.gif" width="300"> |
 | `System.console()`을 활용한<br>비밀번호 마스킹 및 보안 인증. (IDE 환경에서는 경고 메시지와 함께 비밀번호가 노출되며, 이는 의도된 대체 동작입니다.) | '스마트 템플릿'과<br>'AI 꿀팁 추천'의 핵심 로직 | `is_shared=true`로 설정된<br>AI 학습 데이터셋 조회 기능 |
 
-*(참고: 위 `URL_TO_YOUR_GIF_...` 부분은 나중에 깃허브에 GIF 파일을 올린 후 그 주소로 바꿔야 합니다.)*
-
 ---
 
 ## 3. 기술 스택 (Tech Stack)
