@@ -1,0 +1,17 @@
+# Java / Eclipse
+# Compiled class files
+/bin/
+*.class
+
+# Log files
+*.log
+
+# User-specific settings
+/.settings/
+
+# Local Database file (절대 올리면 안 됨!)
+*.db
+
+# IDE temp files
+.project
+.classpath

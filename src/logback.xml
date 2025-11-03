@@ -1,0 +1,24 @@
+<configuration>
+
+  <!-- 콘솔에 로그를 출력하는 Appender 설정 -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <!-- 로그 출력 형식 정의 -->
+      <!-- %d{HH:mm:ss.SSS}: 시간, %-5level: 로그 레벨, %logger{36}: 클래스명, %msg: 메시지, %n: 줄바꿈 -->
+      <pattern>%d{HH:mm:ss.SSS} [%-5level] %cyan(%logger{15}) - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!--
+    루트 로거 설정. 모든 로그는 기본적으로 이 설정을 따름.
+    level="INFO": INFO 레벨 이상의 로그(INFO, WARN, ERROR)만 출력.
+                  개발 중 더 자세한 로그를 보려면 "DEBUG"로 변경.
+  -->
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <!-- 특정 패키지의 로그 레벨만 따로 설정 가능 (예시) -->
+  <!-- <logger name="com.smartpacker.repository" level="DEBUG"/> -->
+
+</configuration>
