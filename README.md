@@ -31,31 +31,27 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 <summary><h3>👉 [클릭] 추가 기능 스크린샷 (4)</h3></summary>
 <br>
 
-> **1. 🤖 스마트 카테고리 추천**
-> <img src="demo/screenshot-category.png" width="450">
->
-> **[기능 설명]** `[SMART]` 추천 카테고리 제안 (y/n) - "반팔" 입력 시 "의류"를 자동 추천합니다.
+**1. 🤖 스마트 카테고리 추천**
+<img src="demo/screenshot-category.png" width="450">
+[기능 설명] `[SMART]` 추천 카테고리 제안 (y/n) - "반팔" 입력 시 "의류"를 자동 추천합니다.
 
 ---
 
-> **2. 📊 패킹 분석 리포트**
-> <img src="demo/screenshot-analysis.png" width="450">
->
-> **[기능 설명]** '내 옷장' 활용도(%) 및 구매 제안 아이템을 분석 리포트로 제공합니다.
+**2. 📊 패킹 분석 리포트**
+<img src="demo/screenshot-analysis.png" width="450">
+[기능 설명] '내 옷장' 활용도(%) 및 구매 제안 아이템을 분석 리포트로 제공합니다.
 
 ---
 
-> **3. 🧐 최종 점검 리포트**
-> <img src="demo/screenshot-final-check.png" width="450">
->
-> **[기능 설명]** `[CHECK]` 저장 직전, AI가 추천했으나 빠뜨린 아이템을 마지막으로 점검합니다.
+**3. 🧐 최종 점검 리포트**
+<img src="demo/screenshot-final-check.png" width="450">
+[기능 설명] `[CHECK]` 저장 직전, AI가 추천했으나 빠뜨린 아이템을 마지막으로 점검합니다.
 
 ---
 
-> **4. 👕 내 옷장 통계 (시각화)**
-> <img src="demo/screenshot-closet-stats.png" width="450">
->
-> **[기능 설명]** ASCII 막대 그래프로 '내 옷장'의 아이템 분포를 시각화합니다.
+**4. 👕 내 옷장 통계 (시각화)**
+<img src="demo/screenshot-closet-stats.png" width="450">
+[기능 설명] ASCII 막대 그래프로 '내 옷장'의 아이템 분포를 시각화합니다.
 
 </details>
 
