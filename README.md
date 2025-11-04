@@ -28,16 +28,30 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 
 ---
 <details>
-<summary><b>📸 추가 기능 스크린샷 (클릭해서 펼쳐보기)</b></summary>
+<summary><h3>👉 [클릭] 추가 기능 스크린샷 (4)</h3></summary>
 <br>
+  
+### 1. 🤖 스마트 카테고리 추천
+`[SMART]` 추천 카테고리 제안 (y/n)
+<img src="demo/screenshot-category.png" width="450">
 
-| 스마트 카테고리 추천 | 패킹 분석 리포트 |
-| :---: | :---: |
-| `[SMART]` 추천 카테고리 제안 (y/n) | '내 옷장' 활용도(%) 및 아이템 제안 |
-| <img src="demo/screenshot-category.png" width="400"> | <img src="demo/screenshot-analysis.png" width="400"> |
-| **최종 점검 리포트** | **내 옷장 통계 (시각화)** |
-| `[CHECK]` 저장 직전, 빠뜨린 AI 추천 점검 | ASCII 막대 그래프로 표현된 통계 |
-| <img src="demo/screenshot-final-check.png" width="400"> | <img src="demo/screenshot-closet-stats.png" width="400"> |
+---
+
+### 2. 📊 패킹 분석 리포트
+'내 옷장' 활용도(%) 및 아이템 제안
+<img src="demo/screenshot-analysis.png" width="450">
+
+---
+
+### 3. 🧐 최종 점검 리포트
+`[CHECK]` 저장 직전, 빠뜨린 AI 추천 점검
+<img src="demo/screenshot-final-check.png" width="450">
+
+---
+
+### 4. 👕 내 옷장 통계 (시각화)
+ASCII 막대 그래프로 표현된 통계
+<img src="demo/screenshot-closet-stats.png" width="450">
 
 </details>
 
