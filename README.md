@@ -19,14 +19,27 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 
 ---
 
-## 2. 핵심 기능 데모 (GIF)
+(GIF 썸네일을 클릭하시면 원본 크기의 애니메이션으로 보실 수 있습니다 🔎)
 
 | GIF 1: 보안 로그인 | GIF 2: AI 핵심 기능 | GIF 3: AI 데이터 조회 (Admin) |
 | :---: | :---: | :---: |
-| <img src="demo/demo-auth.gif" width="300"> | <img src="demo/demo-ai-core.gif" width="300"> | <img src="demo/demo-admin-data.gif" width="300"> |
+| <a href="demo/demo-auth.gif"><img src="demo/demo-auth.gif" width="300"></a> | <a href="demo/demo-ai-core.gif"><img src="demo/demo-ai-core.gif" width="300"></a> | <a href="demo/demo-admin-data.gif"><img src="demo/demo-admin-data.gif" width="300"></a> |
 | `System.console()`을 활용한<br>비밀번호 마스킹 및 보안 인증. (IDE 환경에서는 경고 메시지와 함께 비밀번호가 노출되며, 이는 의도된 대체 동작입니다.) | '스마트 템플릿'과<br>'AI 꿀팁 추천'의 핵심 로직 | `is_shared=true`로 설정된<br>AI 학습 데이터셋 조회 기능 |
 
 ---
+<details>
+<summary><b>📸 추가 기능 스크린샷 (클릭해서 펼쳐보기)</b></summary>
+<br>
+
+| 스마트 카테고리 추천 | 패킹 분석 리포트 |
+| :---: | :---: |
+| `[SMART]` 추천 카테고리 제안 (y/n) | '내 옷장' 활용도(%) 및 아이템 제안 |
+| <img src="demo/screenshot-category.png" width="400"> | <img src="demo/screenshot-analysis.png" width="400"> |
+| **최종 점검 리포트** | **내 옷장 통계 (시각화)** |
+| `[CHECK]` 저장 직전, 빠뜨린 AI 추천 점검 | ASCII 막대 그래프로 표현된 통계 |
+| <img src="demo/screenshot-final-check.png" width="400"> | <img src="demo/screenshot-closet-stats.png" width="400"> |
+
+</details>
 
 ## 3. 기술 스택 (Tech Stack)
 
@@ -41,6 +54,12 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 ---
 
 ## 4. 아키텍처 및 핵심 설계
+
+이 프로젝트는 프레임워크 없이 3계층 아키텍처와 DIP(의존성 역전 원칙)를 기반으로, 각 객체의 책임과 관계를 명확히 분리하여 설계되었습니다.
+
+<p align="center">
+  <img src="demo/class-diagram.png" alt="Smart Packer CLI 클래스 다이어그램" width="80%">
+</p>
 
 프레임워크의 도움 없이, **'왜'** 그렇게 설계해야 하는지에 대한 고민을 바탕으로 구축되었습니다.
 
