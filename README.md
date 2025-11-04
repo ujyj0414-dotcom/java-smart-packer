@@ -57,7 +57,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 
 <img src="demo/screenshot-analysis.png" width="450">
 
-<small>[기능 설명] '내 옷장' 활용도(%) 및 구매 제안 아이템을 분석 리포트로 제공합니다.</small>
+<small>[기능 설명] '내 옷장' 활용도(%)를 분석하고, 여행에 사용된 '미등록 아이템'을 옷장에 동기화합니다.</small>
 
 ---
 
