@@ -26,34 +26,40 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 | <a href="demo/demo-auth.gif"><img src="demo/demo-auth.gif" width="300"></a> | <a href="demo/demo-ai-core.gif"><img src="demo/demo-ai-core.gif" width="300"></a> | <a href="demo/demo-admin-data.gif"><img src="demo/demo-admin-data.gif" width="300"></a> |
 | `System.console()`을 활용한<br>비밀번호 마스킹 및 보안 인증. (IDE 환경에서는 경고 메시지와 함께 비밀번호가 노출되며, 이는 의도된 대체 동작입니다.) | '스마트 템플릿'과<br>'AI 꿀팁 추천'의 핵심 로직 | `is_shared=true`로 설정된<br>AI 학습 데이터셋 조회 기능 |
 
----
+
 <details>
 <summary><h3>👉 [클릭] 추가 기능 스크린샷 (4)</h3></summary>
 <br>
-  
-### 1. 🤖 스마트 카테고리 추천
-`[SMART]` 추천 카테고리 제안 (y/n)
-<img src="demo/screenshot-category.png" width="450">
+
+> **1. 🤖 스마트 카테고리 추천**
+> <img src="demo/screenshot-category.png" width="450">
+>
+> **[기능 설명]** `[SMART]` 추천 카테고리 제안 (y/n) - "반팔" 입력 시 "의류"를 자동 추천합니다.
 
 ---
 
-### 2. 📊 패킹 분석 리포트
-'내 옷장' 활용도(%) 및 아이템 제안
-<img src="demo/screenshot-analysis.png" width="450">
+> **2. 📊 패킹 분석 리포트**
+> <img src="demo/screenshot-analysis.png" width="450">
+>
+> **[기능 설명]** '내 옷장' 활용도(%) 및 구매 제안 아이템을 분석 리포트로 제공합니다.
 
 ---
 
-### 3. 🧐 최종 점검 리포트
-`[CHECK]` 저장 직전, 빠뜨린 AI 추천 점검
-<img src="demo/screenshot-final-check.png" width="450">
+> **3. 🧐 최종 점검 리포트**
+> <img src="demo/screenshot-final-check.png" width="450">
+>
+> **[기능 설명]** `[CHECK]` 저장 직전, AI가 추천했으나 빠뜨린 아이템을 마지막으로 점검합니다.
 
 ---
 
-### 4. 👕 내 옷장 통계 (시각화)
-ASCII 막대 그래프로 표현된 통계
-<img src="demo/screenshot-closet-stats.png" width="450">
+> **4. 👕 내 옷장 통계 (시각화)**
+> <img src="demo/screenshot-closet-stats.png" width="450">
+>
+> **[기능 설명]** ASCII 막대 그래프로 '내 옷장'의 아이템 분포를 시각화합니다.
 
 </details>
+
+---
 
 ## 3. 기술 스택 (Tech Stack)
 
