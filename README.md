@@ -1,7 +1,9 @@
 # Smart Packer CLI: 데이터 기반 지능형 짐 싸기 추천 엔진
 
 
+
 Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 데이터)'과 '개인화(내 옷장)'를 통해 최적의 짐 싸기 목록을 제안하는 **순수 Java 기반 지능형 추천 엔진**입니다.
+
 
 
 ## 0. 프로젝트 목표 (Project Goal)
@@ -9,6 +11,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 단순히 짐을 체크하는 To-Do 리스트가 아니라, "내가 뭘 빠뜨렸지?"라는 근본적인 문제를 데이터로 해결하고 싶었습니다.
 
 이를 위해 '집단 지성(공유 데이터)'과 '개인화(내 옷장)'라는 두 가지 데이터를 활용하여, 사용자가 미처 생각하지 못한 아이템까지 제안하는 **지능형 추천 엔진**을 순수 Java 환경에서 구현하는 것을 목표로 했습니다.
+
 
 
 ## 1. 주요 기능 (Features)
@@ -31,7 +34,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 
 
 <details>
-<summary><h3>👉 [클릭] 추가 기능 스크린샷</h3></summary>
+<summary><h3>👉 [클릭] 추가 기능 스크린샷 (6)</h3></summary>
 <br>
 
 **1. 🤖 스마트 카테고리 추천**
@@ -63,6 +66,22 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 <img src="demo/screenshot-closet-stats.png" width="450">
 
 <small>[기능 설명] ASCII 막대 그래프로 '내 옷장'의 아이템 분포를 시각화합니다.</small>
+
+---
+
+**5. ⚠️ 사용자 중심 예외 처리**
+
+<img src="demo/screenshot-exception.png" width="450">
+
+<small>[기능 설명] `UserNotFoundException`을 캐치하여, 사용자 친화적인 한글 메시지로 '번역'해 처리합니다.</small>
+
+---
+
+**6. ✅ JUnit 테스트 통과 (신뢰도)**
+
+<img src="demo/screenshot-junit.png" width="450">
+
+<small>[기능 설명] 인메모리 DB를 활용한 핵심 로직(Repository, Service) 테스트가 모두 통과했음을 증명합니다.</small>
 
 </details>
 
@@ -121,7 +140,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 ### 3. [Security] 안전한 사용자 인증 설계
 * **문제:** 비밀번호를 평문이나 단순 해시로 저장 시 보안에 취약합니다.
 * **해결:**
-    1.  **Salt & Hashing:** 사용자별 고유 `Salt`를 생성하여 `SHA-26` 해싱을 적용, 레인보우 테이블 공격을 방지했습니다.
+    1.  **Salt & Hashing:** 사용자별 고유 `Salt`를 생성하여 `SHA-256` 해싱을 적용, 레인보우 테이블 공격을 방지했습니다.
     2.  **Masking:** `System.console()`을 활용, 터미널 환경에서 비밀번호 입력 시 마스킹(`*`) 처리하여 정보 노출을 방지했습니다.
 
 ### 4. [Exception] 사용자 중심의 예외 처리 전략
