@@ -84,7 +84,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 ### 1. [OOP] 객체 다형성과 JSON 역직렬화 문제
 * **문제:** '의류', '전자기기' 등은 서로 다른 속성을 가집니다. 이를 `Item` 추상 클래스와 `ClothingItem` 등 서브클래스로 **객체지향적 다형성**을 구현했으나, `Gson`이 DB의 JSON을 `abstract class`로 복원하지 못하는 `JsonParseException`이 발생했습니다.
 * **해결:**
-    * 객체지향 설계를 포기하는 대신, <b>`ItemFactory`(팩토리 패턴)</b>와 `RuntimeTypeAdapterFactory`를 도입했습니다.
+    * JSON 역직렬화 과정에서 객체지향의 다형성을 유지하기 위해, <b>`ItemFactory(팩토리 패턴)`</b>와 `RuntimeTypeAdapterFactory`를 도입했습니다.
     * JSON 내부의 `category` 값을 읽어 `ClothingItem`인지 `ElectronicItem`인지 동적으로 판단하여, **DB에 저장된 JSON에서 객체의 다형성을 완벽하게 복원**해냈습니다.
 
 ### 2. [Test] 테스트 격리 및 신뢰성 확보
