@@ -1,8 +1,9 @@
 # Smart Packer CLI: 데이터 기반 지능형 짐 싸기 추천 엔진
 <br>
-Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 데이터)'과 '개인화(내 옷장)'를 통해 최적의 짐 싸기 목록을 제안하는 **순수 Java 기반 지능형 추천 엔진**입니다.
+Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 데이터)'과 '개인화(내 옷장)'를 통해 최적의 짐 싸기 목록을 제안하는 <b>순수 Java 기반 지능형 추천 엔진</b>입니다.
 <br>
-## 0. 프로젝트 목표 (Project Goal)
+
+<h2>0. 프로젝트 목표 (Project Goal)</h2>
 
 단순히 짐을 체크하는 To-Do 리스트가 아니라, "내가 뭘 빠뜨렸지?"라는 근본적인 문제를 데이터로 해결하고 싶었습니다.
 
@@ -142,7 +143,7 @@ Smart Packer CLI는 단순한 체크리스트가 아닌, '집단 지성(공유 �
 * **해결:**
     1.  **커스텀 예외:** `DuplicateUserException`, `InvalidPasswordException` 등 비즈니스 상황에 맞는 커스텀 예외를 정의했습니다.
     2.  **예외 래핑(Wrapping):** `Repository` 계층의 `SQLException`을 `DatabaseException`(Runtime)으로 감싸, 상위 계층이 `JDBC` 기술에 종속되지 않도록 분리했습니다.
-    3.  **예외 번역(Translation):** `MainController`가 모든 예외를 최종적으로 `catch`하여, "이미 존재하는 아이디입니다."와 같이 **사용자가 이해할 수 있는 명확한 언어로 '번역'**하여 안내하도록 설계했습니다.
+    3.  **예외 번역(Translation):** `MainController`가 모든 예외를 최종적으로 `catch`하여, "이미 존재하는 아이디입니다."와 같이 <b>사용자가 이해할 수 있는 명확한 언어로 '번역'</b>하여 안내하도록 설계했습니다.
 
 ### 5. [DB] 데이터 무결성 보장
 * **문제:** 만약 회원이 탈퇴(`DELETE`)할 때, 이 회원이 작성한 `packing_lists`나 `my_closet` 데이터가 삭제되지 않고 남아있다면 '고아 데이터(Orphan Data)'가 되어 DB를 오염시킵니다.
